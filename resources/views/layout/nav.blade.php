@@ -47,9 +47,11 @@
             </a>
             <ul class="dropdown-menu px-2" aria-labelledby="navbarDropdown">
               <li>
-                <a class="dropdown-item" href="{{route('admin.cashiers.index')}}">Cashiers</a>
+                <a class="dropdown-item" href="{{route('admin.users.create')}}">New</a>
+                <a class="dropdown-item" href="{{route('admin.users.index')}}">View</a>
+                {{-- <a class="dropdown-item" href="{{route('admin.cashiers.index')}}">Cashiers</a>
                 <a class="dropdown-item" href="{{route('admin.reader')}}">Meter Reader</a>
-                <a class="dropdown-item" href="{{route('admin.admin')}}">System Admin</a>
+                <a class="dropdown-item" href="{{route('admin.admin')}}">System Admin</a> --}}
               </li>
             </ul>
           </li>
@@ -63,9 +65,9 @@
             <ul class="dropdown-menu px-2" aria-labelledby="navbarDropdown">
               <li>
                 <a class="dropdown-item" href="{{route('admin.services.create')}}">New</a>
-
+                <a class="dropdown-item" href="{{route('admin.services-list.index')}}">List of Services</a>
+                <a class="dropdown-item" href="{{route('admin.request-approvals')}}">Requests</a>
               </li>
-              <a class="dropdown-item" href="{{route('admin.services-list.index')}}">List of Services</a>
             </ul>
           </li>
           @endadminonly
